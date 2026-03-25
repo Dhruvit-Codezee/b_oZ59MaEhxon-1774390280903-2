@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /*
+      Automaly Official Brand Guidelines v1.1
+      Purple: #4109CE  |  Blue: #4109CE
+      Lavender: #F6F5FC  |  Orange: #FA7E11
+      Light Blue: #5FCDFF  |  Amber: #F6AE2D
+      Gradient: Purple (#4109CE) -> Light Purple (#5B2FE0)
+    */
+    --background: 0 0% 100%;
+    --foreground: 230 25% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+    --primary: 257 94% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 249 58% 97%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 249 58% 97%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 27 96% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 249 20% 91%;
+    --input: 249 20% 91%;
+    --ring: 257 94% 42%;
+    --chart-1: 257 94% 42%;
+    --chart-2: 257 94% 42%;
+    --chart-3: 27 96% 52%;
+    --chart-4: 199 100% 69%;
+    --chart-5: 39 92% 57%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 9%;
+    --sidebar-primary: 257 94% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 249 58% 97%;
+    --sidebar-accent-foreground: 0 0% 9%;
+    --sidebar-border: 249 20% 91%;
+    --sidebar-ring: 257 94% 42%;
+  }
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 257 94% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 257 94% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 27 96% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 257 94% 42%;
+    --chart-1: 257 94% 42%;
+    --chart-2: 257 94% 42%;
+    --chart-3: 27 96% 52%;
+    --chart-4: 199 100% 69%;
+    --chart-5: 39 92% 57%;
+    --sidebar-background: 0 0% 9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 257 94% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 257 94% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    /* Base font size: 17px provides better readability on production displays */
+    /* This compensates for v0 preview vs production rendering differences */
+    font-size: 17px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  /* Scale up slightly on larger screens for better readability */
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply text-base leading-relaxed;
+    background-image: url('/images/circuit-pattern.svg');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+  }
+}
+
+/* ── Section Background Contrast Strategy ──────────────────────────────
+   Three-tier alternating background system for visual separation:
+   
+   Tier 1: bg-section-light (#FAFAFC) - Warm off-white content sections
+   Tier 2: bg-section-lavender (#EFECFA) - Purple-tinted accent sections  
+   Tier 3: brand-gradient (dark purple) - CTA and hero sections
+   
+   Color contrast ratios:
+   - Light vs Lavender: Clearly distinguishable (ΔE > 5)
+   - Both maintain WCAG AA compliance for text readability
+   - Consistent with brand purple (#4109CE) undertones
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Section utility classes for consistent backgrounds */
+.bg-section-light {
+  background-color: #FAFAFC !important;
+}
+
+.bg-section-lavender {
+  background-color: #EFECFA !important;
+}
+
+/* Enhanced contrast for alternating sections */
+section.bg-section-light,
+section.bg-section-lavender,
+section.bg-brand-lavender,
+section[class*="bg-gray-50"] {
+  position: relative;
+}
+
+/* Subtle separator line between contrasting sections */
+section.bg-section-light + section.bg-section-lavender,
+section.bg-section-lavender + section.bg-section-light,
+section.bg-brand-lavender + section.bg-section-light,
+section.bg-section-light + section.bg-brand-lavender {
+  border-top: 1px solid rgba(65, 9, 206, 0.05);
+}
+
+/* Hero sections maintain their own backgrounds */
+section.hero-circuit {
+  background-color: transparent !important;
+}
+
+/* Keep navigation and footer with solid backgrounds */
+nav.bg-white,
+footer {
+  background-color: white !important;
+}
+
+/* ── Smooth scroll for anchor links (respects prefers-reduced-motion) ── */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ── Performance: content-visibility for below-the-fold sections ───── */
+/* Skip rendering of off-screen sections until they near the viewport */
+section:nth-child(n+3) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+/* Automaly brand gradient utility */
+.brand-gradient {
+  background: linear-gradient(135deg, #4109CE 0%, #5B2FE0 100%);
+}
+.brand-gradient-text {
+  background: linear-gradient(135deg, #4109CE 0%, #5B2FE0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
