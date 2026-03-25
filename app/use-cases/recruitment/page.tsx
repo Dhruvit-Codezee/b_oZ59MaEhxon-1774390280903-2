@@ -205,10 +205,11 @@ export default function RecruitmentPage() {
       <section className="relative min-h-[600px] w-full overflow-hidden lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh]">
         {/* Background Image - positioned to keep 3D connected cubes visible on right */}
         <div
-          className="absolute inset-0 bg-no-repeat bg-right-bottom sm:bg-right md:bg-[center_right_-5%] lg:bg-[center_right_10%] xl:bg-center"
+          className="absolute inset-0 bg-no-repeat"
           style={{ 
             backgroundImage: "url('/images/ai-automation-for-recruitment.webp')",
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
+            backgroundPosition: 'center right',
             backgroundColor: '#1a0a4e',
           }}
         />

@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { CalendlyButton } from "@/components/calendly-button"
 import { clientQuotes } from "@/lib/testimonials"
@@ -165,12 +164,27 @@ export default function TechStartupsContent() {
       />
 
       {/* Hero */}
-      <section className="relative w-full bg-brand-purple">
-        {/* Two-column layout: Text left, Image right */}
-        <div className="mx-auto flex min-h-[600px] max-w-[1600px] flex-col lg:min-h-[85vh] lg:flex-row xl:min-h-[90vh] 2xl:min-h-[95vh]">
-          {/* Left column - Text content */}
-          <div className="relative z-10 flex flex-1 items-center px-6 pt-28 pb-8 lg:max-w-[55%] lg:pb-16 lg:pl-8 lg:pr-12 lg:pt-36 xl:pl-12 xl:pr-16 2xl:pl-16">
-            <div className="max-w-xl lg:max-w-2xl">
+      <section className="relative min-h-[600px] w-full overflow-hidden lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh]">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('/images/ai-automation-for-tech-startups.webp')",
+            backgroundSize: 'contain',
+            backgroundPosition: 'center right',
+            backgroundColor: '#2D1070',
+          }}
+        />
+        {/* Dark gradient overlay - left-to-right for text contrast */}
+        <div
+          className="absolute inset-0 z-[1]"
+          style={{
+            background: 'linear-gradient(to right, rgba(45, 16, 112, 0.95) 0%, rgba(45, 16, 112, 0.85) 30%, rgba(45, 16, 112, 0.5) 55%, rgba(45, 16, 112, 0.2) 75%, transparent 100%)',
+          }}
+        />
+
+        <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
+          <div className="max-w-xl lg:max-w-2xl">
             {/* Breadcrumb */}
             <nav className="mb-8 flex items-center gap-2 text-sm text-white/60">
               <Link
@@ -193,7 +207,7 @@ export default function TechStartupsContent() {
               </p>
             </div>
 
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-balance">
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
               AI & Automation for{" "}
               <span className="text-brand-orange">Technology Scale-Ups</span>
             </h1>
@@ -226,21 +240,6 @@ export default function TechStartupsContent() {
               >
                 <Link href="/pricing">View Pricing</Link>
               </Button>
-            </div>
-            </div>
-          </div>
-          
-          {/* Right column - 3D Image (fully visible, no cropping) */}
-          <div className="relative flex flex-1 items-center justify-center lg:min-w-[45%]">
-            <div className="relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[600px] 2xl:min-h-[700px] lg:h-full">
-              <Image
-                src="/images/ai-automation-for-tech-startups.webp"
-                alt="3D isometric blocks representing AI automation building blocks"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                className="object-contain object-center lg:object-right"
-              />
             </div>
           </div>
         </div>
