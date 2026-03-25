@@ -26,7 +26,7 @@ export function HeroBackground({
   alt,
   fallbackColor,
   overlayGradient,
-  positionClassName = "object-center",
+  positionClassName = "object-bottom",
   objectFit = "cover",
 }: HeroBackgroundProps) {
   // Determine object-fit classes based on mode

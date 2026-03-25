@@ -160,7 +160,7 @@ export default async function UseCasePage({
               <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-brand-orange">
                 {isFunctional ? "By Function" : "By Sector"}
               </p>
-              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-balance">
                 {useCase.title}
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/70 sm:text-lg text-pretty">
@@ -200,7 +200,7 @@ export default async function UseCasePage({
             <div className="space-y-16">
               {sections.map((section) => (
                 <div key={section.heading}>
-                  <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl text-balance">
+                  <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl text-balance">
                     {section.heading}
                   </h2>
                   {"body" in section && section.body && (
@@ -230,7 +230,7 @@ export default async function UseCasePage({
       {/* Cross-links */}
       <section className="bg-section-light py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-6 text-center text-2xl font-bold text-foreground sm:text-3xl">
+          <h2 className="mb-6 text-center text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl">
             {isFunctional ? "Related Sectors" : "Related Functions"}
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -265,7 +265,7 @@ export default async function UseCasePage({
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <div className="brand-gradient rounded-2xl p-10 text-center lg:p-12">
-              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl text-balance">
+              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl xl:text-4xl text-balance">
                 {useCase.content?.cta?.heading ??
                   `Ready to Explore ${useCase.shortTitle} Automation?`}
               </h2>
@@ -340,7 +340,7 @@ function RichContent({ content }: { content: UseCaseContent }) {
             {/* Challenges */}
             {content.challenges && (
               <div>
-                <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl text-balance">
+                <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl text-balance">
                   {content.challenges.heading}
                 </h2>
                 {content.challenges.intro && (
@@ -369,7 +369,7 @@ function RichContent({ content }: { content: UseCaseContent }) {
             {/* Benefits */}
             {content.benefits && (
               <div>
-                <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl text-balance">
+                <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl text-balance">
                   {content.benefits.heading}
                 </h2>
                 {content.benefits.intro && (
@@ -400,7 +400,7 @@ function RichContent({ content }: { content: UseCaseContent }) {
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-12">
               {content.extraSections.map((section) => (
                 <div key={section.heading}>
-                  <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl text-balance">
+                  <h2 className="mb-4 text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl text-balance">
                     {section.heading}
                   </h2>
                   {section.intro &&
@@ -443,7 +443,7 @@ function RichContent({ content }: { content: UseCaseContent }) {
             {/* Outcomes */}
             {content.outcomes && (
               <div>
-                <h2 className="mb-6 text-2xl font-bold text-foreground sm:text-3xl text-balance">
+                <h2 className="mb-6 text-2xl font-bold text-foreground sm:text-3xl xl:text-4xl text-balance">
                   {content.outcomes.heading}
                 </h2>
                 {content.outcomes.intro && (

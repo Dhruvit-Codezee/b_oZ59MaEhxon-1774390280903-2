@@ -98,10 +98,20 @@
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
-  /* Scale up slightly on larger screens for better readability */
+  /* Scale up progressively on larger screens for better readability */
   @media (min-width: 1024px) {
     html {
       font-size: 18px;
+    }
+  }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 19px;
+    }
+  }
+  @media (min-width: 1536px) {
+    html {
+      font-size: 20px;
     }
   }
   body {

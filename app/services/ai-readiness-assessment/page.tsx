@@ -164,6 +164,7 @@ export default function AIReadinessAssessmentPage() {
           alt="Isometric 3D illustration of connected data infrastructure and server blocks"
           fallbackColor="#c4a8e8"
           overlayGradient="radial-gradient(ellipse 70% 60% at center, rgba(196, 168, 232, 0.7) 0%, rgba(196, 168, 232, 0.4) 60%, rgba(196, 168, 232, 0.2) 100%)"
+          objectFit="responsive"
         />
         <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center justify-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
           <div className="max-w-4xl text-center">
@@ -183,7 +184,7 @@ export default function AIReadinessAssessmentPage() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
             Start with Clarity, Scale with Confidence
           </p>
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl text-balance">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-balance">
             <span className="text-brand-purple">AI Readiness</span>{" "}
             <span className="text-foreground">Assessment</span>
           </h1>
@@ -226,7 +227,7 @@ export default function AIReadinessAssessmentPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top heading */}
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl xl:text-5xl text-balance">
               Why Start with an{" "}
               <span className="text-brand-purple">Assessment?</span>
             </h2>
@@ -299,7 +300,7 @@ export default function AIReadinessAssessmentPage() {
       <section className="bg-section-light py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-14 max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl xl:text-5xl text-balance">
               What{"'"}s Included in the{" "}
               <span className="text-brand-purple">Assessment?</span>
             </h2>
@@ -341,7 +342,7 @@ export default function AIReadinessAssessmentPage() {
       <section className="bg-section-lavender py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl xl:text-5xl text-balance">
               From Readiness to{" "}
               <span className="text-brand-purple">Implementation</span>
             </h2>
@@ -395,7 +396,7 @@ export default function AIReadinessAssessmentPage() {
       <section className="bg-section-light py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl xl:text-5xl text-balance">
               Who Is It{" "}
               <span className="text-brand-purple">For?</span>
             </h2>
@@ -432,7 +433,7 @@ export default function AIReadinessAssessmentPage() {
       {/* ── CTA ───────────────────────────────────────────────────────── */}
       <section className="brand-gradient py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl xl:text-5xl text-balance">
             Take the First Step
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/70 text-pretty">

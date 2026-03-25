@@ -38,7 +38,8 @@ export function HeroSection() {
         alt="AI automation 3D server blocks illustration"
         fallbackColor="#140C2B"
         overlayGradient="linear-gradient(to right, rgba(20, 12, 43, 0.95) 0%, rgba(20, 12, 43, 0.85) 30%, rgba(20, 12, 43, 0.5) 55%, rgba(20, 12, 43, 0.2) 75%, transparent 100%)"
-        positionClassName="object-right-bottom sm:object-right md:object-[center_right] lg:object-center"
+        positionClassName="object-right-bottom sm:object-right md:object-[center_right] lg:object-bottom"
+        objectFit="responsive"
       />
 
       <div className="relative z-10 mx-auto flex min-h-[550px] max-w-7xl items-center w-full px-6 pt-24 pb-12 lg:min-h-[80vh] lg:pt-32 lg:pb-16 xl:min-h-[85vh] 2xl:min-h-[90vh]">
@@ -46,11 +47,11 @@ export function HeroSection() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange sm:mb-4 sm:text-base">
             AI & Automation Consultants for Growing Businesses
           </p>
-          <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] text-balance">
+          <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] xl:text-[5.5rem] 2xl:text-[6rem] text-balance">
             <span className="text-white">Grow Revenue</span>{" "}
             <span className="text-white/90">without Growing Complexity</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-md text-base font-medium leading-relaxed text-white/70 sm:text-lg sm:max-w-lg lg:max-w-xl lg:text-xl text-pretty">
+          <p className="mx-auto mt-5 max-w-md text-base font-medium leading-relaxed text-white/70 sm:text-lg sm:max-w-lg lg:max-w-xl lg:text-xl xl:text-2xl text-pretty">
             We identify where AI & automation will save you the most time and money - then we build it.
           </p>
 

@@ -193,7 +193,7 @@ export default function TechStartupsContent() {
               </p>
             </div>
 
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-balance">
               AI & Automation for{" "}
               <span className="text-brand-orange">Technology Scale-Ups</span>
             </h1>
@@ -232,7 +232,7 @@ export default function TechStartupsContent() {
           
           {/* Right column - 3D Image (fully visible, no cropping) */}
           <div className="relative flex flex-1 items-center justify-center lg:min-w-[45%]">
-            <div className="relative h-[300px] w-full sm:h-[400px] md:h-[450px] lg:h-full">
+            <div className="relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[600px] 2xl:min-h-[700px] lg:h-full">
               <Image
                 src="/images/ai-automation-for-tech-startups.webp"
                 alt="3D isometric blocks representing AI automation building blocks"
@@ -253,7 +253,7 @@ export default function TechStartupsContent() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               The Problem
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Growth Creates{" "}
               <span className="text-brand-purple">Operational Drag</span>
             </h2>
@@ -283,7 +283,7 @@ export default function TechStartupsContent() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               The Solution
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Where Automation Delivers{" "}
               <span className="text-brand-purple">Operational Leverage</span>
             </h2>
@@ -303,7 +303,7 @@ export default function TechStartupsContent() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               Example Workflows
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Automation in{" "}
               <span className="text-brand-purple">Action</span>
             </h2>
@@ -329,7 +329,7 @@ export default function TechStartupsContent() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               Measurable Impact
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Results That{" "}
               <span className="text-brand-purple">Compound</span>
             </h2>
@@ -371,7 +371,7 @@ export default function TechStartupsContent() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               Our Approach
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Start with Leverage.{" "}
               <span className="text-brand-purple">Not Complexity</span>
             </h2>
@@ -416,7 +416,7 @@ export default function TechStartupsContent() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="mx-auto max-w-3xl rounded-2xl bg-gradient-to-br from-brand-purple to-brand-purple/90 px-8 py-14 lg:px-16 lg:py-20">
             <Zap className="mx-auto mb-5 h-8 w-8 text-brand-orange" />
-            <h2 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Ready to Scale Without the Overhead?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 text-pretty">

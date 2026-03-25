@@ -206,7 +206,7 @@ export default function MSSPsPage() {
       <section className="relative min-h-[600px] w-full overflow-hidden lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh]">
         {/* Background Image - using contain on larger screens for proportionate sizing */}
         <div
-          className="absolute inset-0 bg-no-repeat bg-right bg-cover lg:bg-contain lg:bg-right"
+          className="absolute inset-0 bg-no-repeat bg-right-bottom bg-cover lg:bg-contain lg:bg-right-bottom"
           style={{ 
             backgroundImage: "url('/images/ai-automation-for-mssps.webp')",
             backgroundColor: '#1a0a3e',
@@ -244,7 +244,7 @@ export default function MSSPsPage() {
               </p>
             </div>
 
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-balance">
               AI & Automation for{" "}
               <span className="text-brand-orange">MSSPs</span>
             </h1>
@@ -291,7 +291,7 @@ export default function MSSPsPage() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               The Problem
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               The MSSP{" "}
               <span className="text-brand-purple">Scaling Challenge</span>
             </h2>
@@ -341,7 +341,7 @@ export default function MSSPsPage() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               The Solution
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Where Automation Strengthens{" "}
               <span className="text-brand-purple">MSSP Architecture</span>
             </h2>
@@ -377,7 +377,7 @@ export default function MSSPsPage() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               The Results
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               The Commercial Impact for{" "}
               <span className="text-brand-purple">MSSPs</span>
             </h2>
@@ -429,7 +429,7 @@ export default function MSSPsPage() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-orange">
               Our Approach
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl text-balance">
               Architecture First.{" "}
               <span className="text-brand-purple">Automation Second</span>
             </h2>
@@ -480,7 +480,7 @@ export default function MSSPsPage() {
       <section className="bg-section-light py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl text-balance">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl xl:text-4xl text-balance">
               What <span className="text-brand-purple">Our Clients Say</span>
             </h2>
           </div>
@@ -509,7 +509,7 @@ export default function MSSPsPage() {
           {/* Integrated CTA */}
           <div className="mx-auto mt-16 max-w-3xl">
             <div className="brand-gradient rounded-2xl p-10 text-center lg:p-12">
-              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl text-balance">
+              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl xl:text-4xl text-balance">
                 Scale Your Security Operations Intelligently
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90">
