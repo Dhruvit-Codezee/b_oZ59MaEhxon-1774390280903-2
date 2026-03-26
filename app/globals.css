@@ -92,16 +92,16 @@
     @apply border-border;
   }
   html {
-    /* Base font size: 17px provides better readability on production displays */
-    /* This compensates for v0 preview vs production rendering differences */
-    font-size: 17px;
+    /* Math: 17px * 0.8 = 13.6px (80% of previous size) */
+    font-size: 13.6px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
   /* Scale up progressively on larger screens for better readability */
   @media (min-width: 1024px) {
     html {
-      font-size: 18px;
+      /* Math: 18px * 0.8 = 14.4px (80% of previous size for desktop) */
+      font-size: 14.4px;
     }
   }
 
