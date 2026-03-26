@@ -189,6 +189,8 @@ export default async function BlogPage({
             alt="Isometric 3D illustration of stacked content layers"
             fallbackColor="#1a0a4e"
             overlayGradient="radial-gradient(ellipse at center, rgba(26, 10, 78, 0.8) 0%, rgba(26, 10, 78, 0.6) 40%, rgba(26, 10, 78, 0.4) 70%, rgba(26, 10, 78, 0.3) 100%)"
+            objectFit="cover"
+            positionClassName="object-top"
           />
           <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center justify-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
             <div className="max-w-4xl text-center">

@@ -38,8 +38,8 @@ export function HeroSection() {
         alt="AI automation 3D server blocks illustration"
         fallbackColor="#140C2B"
         overlayGradient="linear-gradient(to right, rgba(20, 12, 43, 0.95) 0%, rgba(20, 12, 43, 0.85) 30%, rgba(20, 12, 43, 0.5) 55%, rgba(20, 12, 43, 0.2) 75%, transparent 100%)"
-        positionClassName="object-right-bottom sm:object-right md:object-[center_right] lg:object-bottom"
-        objectFit="responsive"
+        positionClassName="object-right"
+        objectFit="cover"
       />
 
       <div className="relative z-10 mx-auto flex min-h-[550px] max-w-7xl items-center w-full px-6 pt-24 pb-12 lg:min-h-[80vh] lg:pt-32 lg:pb-16 xl:min-h-[85vh] 2xl:min-h-[90vh]">

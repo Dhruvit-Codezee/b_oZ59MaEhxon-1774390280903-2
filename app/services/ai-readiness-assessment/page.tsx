@@ -164,7 +164,8 @@ export default function AIReadinessAssessmentPage() {
           alt="Isometric 3D illustration of connected data infrastructure and server blocks"
           fallbackColor="#c4a8e8"
           overlayGradient="radial-gradient(ellipse 70% 60% at center, rgba(196, 168, 232, 0.7) 0%, rgba(196, 168, 232, 0.4) 60%, rgba(196, 168, 232, 0.2) 100%)"
-          objectFit="responsive"
+          objectFit="cover"
+          positionClassName="object-[50%_20%]"
         />
         <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center justify-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
           <div className="max-w-4xl text-center">

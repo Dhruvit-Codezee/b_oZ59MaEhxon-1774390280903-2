@@ -40,6 +40,8 @@ export default function ContactPage() {
             alt="Isometric 3D illustration of a processor chip with glowing circuit pathways"
             fallbackColor="#2e1065"
             overlayGradient="radial-gradient(ellipse 70% 60% at center, rgba(46, 16, 101, 0.7) 0%, rgba(46, 16, 101, 0.4) 60%, rgba(46, 16, 101, 0.2) 100%)"
+            objectFit="cover"
+            positionClassName="object-top"
           />
           <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center justify-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
             <div className="max-w-4xl text-center">

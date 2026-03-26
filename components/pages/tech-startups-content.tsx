@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CalendlyButton } from "@/components/calendly-button"
+import { HeroBackground } from "@/components/hero-background"
 import { clientQuotes } from "@/lib/testimonials"
 import { SolutionCardGrid } from "@/components/solution-card"
 import {
@@ -165,22 +166,14 @@ export default function TechStartupsContent() {
 
       {/* Hero */}
       <section className="relative min-h-[600px] w-full overflow-hidden lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh]">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-no-repeat"
-          style={{ 
-            backgroundImage: "url('/images/ai-automation-for-tech-startups.webp')",
-            backgroundSize: 'contain',
-            backgroundPosition: 'center right',
-            backgroundColor: '#2D1070',
-          }}
-        />
-        {/* Dark gradient overlay - left-to-right for text contrast */}
-        <div
-          className="absolute inset-0 z-[1]"
-          style={{
-            background: 'linear-gradient(to right, rgba(45, 16, 112, 0.95) 0%, rgba(45, 16, 112, 0.85) 30%, rgba(45, 16, 112, 0.5) 55%, rgba(45, 16, 112, 0.2) 75%, transparent 100%)',
-          }}
+        {/* Background Image - using HeroBackground for full-span coverage */}
+        <HeroBackground
+          src="/images/ai-automation-for-tech-startups.webp"
+          alt="3D isometric illustration of technology infrastructure with server blocks"
+          fallbackColor="#2D1070"
+          overlayGradient="linear-gradient(to right, rgba(45, 16, 112, 0.95) 0%, rgba(45, 16, 112, 0.85) 30%, rgba(45, 16, 112, 0.5) 55%, rgba(45, 16, 112, 0.2) 75%, transparent 100%)"
+          objectFit="cover"
+          positionClassName="object-[80%_20%]"
         />
 
         <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center w-full px-6 pt-28 pb-16 lg:min-h-[80vh] lg:pt-36 lg:pb-20 xl:min-h-[85vh] 2xl:min-h-[90vh]">
